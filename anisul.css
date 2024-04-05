@@ -1,0 +1,481 @@
+/* class-15: box model */
+/* .container {
+  background-color: aqua;
+  width: 400px;
+  height: 100px;
+  
+  font-size: 50px;
+  padding: 5px;
+  border: 5px solid red;
+  margin: 5px;
+}
+body {
+  background-color: gray;
+}
+p{
+       font-size: 50px;
+       margin-left: 15px;
+} */
+
+/* class-17,18:pseudo class and element */
+/* .div p:nth-child(odd){
+       content: "";
+       background-color: green;
+       color: white;
+       padding: 10px;
+}
+.div p::first-letter{
+       font-size: 30px;
+       color: red;
+}
+table, tr,th,td{
+       border: 3px solid red;
+       width:fit-content%;
+       border-collapse:collapse;
+       padding: 0 50px;
+}
+table tr:nth-child(odd){
+       background: aqua;
+} */
+
+
+
+/* class 21:Gradient */
+/* .gradient{
+       width: 100%;
+       height: 400px;
+       /* background-image: linear-gradient(to right,green,red); */
+       /* background-image: radial-gradient(circle,red,green);
+} */ 
+
+/* class-23:flot */
+/* #div1{
+       float: left;
+       background-color: red;
+}
+#div2{
+       float: right;
+       background-color: orange;
+}
+#div3{
+       background-color: yellow;
+}
+.div4{
+       clear: both;
+} */
+
+
+/* class--24: navigation bar */
+/* .navbar{
+       width: 600px;
+       height: 100px;
+       background-color: aqua;
+       line-height: 50px;
+       margin: 0 auto;
+
+}
+.navbar ul{}
+.navbar ul li{
+       list-style-type: none;
+       margin: 20px;
+       float: left;
+       
+}
+.navbar ul li a{
+       text-decoration: none;
+       font-size: 20px;
+       color: green;
+       cursor:all-scroll;
+}
+.navbar ul li a:hover{
+       text-decoration: underline;
+       background-color: red;
+       color: white;
+} */
+
+
+
+/* class-25:box sizing and opacity */
+/* .div1{
+       width: 50%;
+       height: 50%;
+       background-color: green;
+       padding: 20px;
+       border: 5px solid red;
+       box-sizing:border-box;
+       float: left;
+}
+.div2{
+       width: 50%;
+       height: 50%;
+       background-color: gray;
+       float: right;
+}
+.div3{
+       clear: both;
+}
+img{
+       float: left;
+       width: 400px;
+       height: 100%;
+       opacity: .5;
+}
+img:hover{
+       opacity: 1;
+       
+} */
+
+
+
+ /* class-29: position property  */
+ /* .div3{
+       width: 100px;
+       height: 50px;
+       padding: 5px;
+       border: 5px solid green;
+       position:fixed;
+     
+ }
+ .div3 a{
+       margin: 0 auto;
+       text-decoration: none;
+       color: black;
+ }
+ .div1{
+       width: 600px;
+       height: 100px;
+       padding: 5px;
+       border: 5px solid red;
+       position:relative;
+       top: 50px;
+ }
+ .div2{
+       width: 600px;
+       height: 500px;
+       padding: 5px;
+       border: 5px solid green;
+       position:relative;
+       left: 50px;
+ }
+ .div4{
+       width: 50px;
+       height: 100px;
+       padding: 5px;
+       border: 5px solid green;
+       position:relative;
+       left: 500px;
+ } */
+
+
+
+
+/* overflow and tooltip */
+/* .overflow{
+       width: 400px;
+       height: 150px;
+       background-color: green;
+       overflow: auto;
+}
+.tooltip-text{
+       visibility: hidden;
+       width: 200px;
+       font-size: 20px;
+       background-color: blue;
+       color: white;
+       position:absolute;
+       top: 50px;
+       text-transform: uppercase;
+}
+.tooltip:hover .tooltip-text{
+       visibility: visible;
+} */
+
+
+
+
+
+/* class- 31: z index and variables */
+/* .div1{
+       width: 400px;
+       height: 400px;
+       background-color: green;
+       position: absolute;
+       z-index: 3;
+
+}
+.div2{
+       width: 400px;
+       height: 400px;
+       background-color: red;
+       position:absolute;
+       top: 150px;
+       left: 150px;
+       z-index: 2;
+} */
+
+
+
+/********************** class-31: flex box ***********************/
+/* .flex-container{
+       background-color: aqua;
+       display: flex; */
+       /* flex-wrap: wrap;
+       flex-direction: row; */
+       /* flex-flow: wrap row;
+       height: 200px;
+       justify-content: center;
+       align-items:center;
+
+}
+.flex-container >div{
+       width: 100px;
+       background-color: gray;
+       font-size:20px;
+       margin:20px;
+       padding:20px;
+       text-align: center;
+} */
+/* .flex-container{
+       background-color: aqua;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-between;
+       
+       
+}
+.flex-container>div{
+       width: 100px;
+       background-color: tomato;
+       text-align: center;
+       font-size: 20px;
+       margin: 10px;
+       padding: 10px;
+
+} */
+
+
+/************************ class-33:shadow ***********************/
+/* h1{
+       text-shadow: 5px -0px 5px red;
+}
+div{
+       width:400px;
+       height:400px;
+       background-color: aqua;      
+}
+div:hover{
+       box-shadow: 1px 1px 5px ;
+} */
+
+
+
+/******************* class-37: grid layout ************************/
+/* .grid-container{
+       display: grid;
+       grid-template-columns: auto auto auto;
+       background-color: aqua;
+       grid-column-gap: 5px;
+       grid-row-gap: 5px;
+       
+
+}
+.grid-container >div{
+       background-color: tomato;
+       border: 1px solid ;
+       text-align: center;
+       padding: 5px;
+} */
+
+/* .grid-container{
+       display: grid;
+       grid-template-columns: auto auto auto;
+       grid-template-rows: auto 100px auto;
+       background-color: aqua; */
+       /* grid-column-gap:10px;
+       grid-row-gap:10px */
+       /* grid-gap: 10px 5px;
+       
+}
+.grid-container >div{
+       background-color: chocolate;
+       border: 2px solid black;
+       border-collapse: collapse;
+       padding: 10px;
+       text-align: center;
+
+}
+.box2{ */
+       /* grid-column-start:1;
+       grid-column-end: 3;
+       grid-row-start:1;
+       grid-row-end: 3; */
+       /* grid-column: 1/-1 */
+       /* grid-column: 1/3;
+       grid-row:1/span 2;
+} */
+
+
+
+/************* class-38:grid layout part-2 *****************/
+.container{
+       
+       display: grid;
+       grid-template-columns: auto auto auto auto auto;
+
+}
+.container>div{
+       background-color: aqua;
+       border: 2px solid green;
+       text-align: center;
+       font-size: 20px;
+       padding: 10px 0;
+       border-collapse: collapse;
+       
+}
+.item1{
+       grid-column: 1/6;
+}
+.item2{
+       grid-column: 1/3;
+}
+.item1{
+       grid-column: 1/6;
+}
+.item1{
+       grid-column: 1/6;
+}
+.item1{
+       grid-column: 1/6;
+}
+
+
+
+
+/* css class-40:center clement */
+/* .div1{
+       width:800px;
+       height:500px;
+       background-color: green;
+       margin: 0 auto;  */
+       /* /* display: flex;
+       justify-content: center;
+       align-items:center; */
+       /* position: relative;
+}
+
+.dis{
+       width: 400px;
+       height: 250px;
+       background-color: pink;
+       position:absolute;
+       top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    
+} */
+
+
+
+
+
+
+/* class-41:drop down menu */
+/* .navbar{
+       background-color: green;
+       padding: 2% 5%;
+       text-align: center;
+       text-transform:uppercase;
+
+}
+.navbar a{
+       padding:10px;
+       color:white;
+       text-decoration:none;
+}
+
+.dropdown-container{
+       display: inline;
+       position:relative;
+
+}
+.dropdown-content a{
+      display: block;
+}
+.dropdown-content{
+       position: absolute;
+       top: 30px;
+       left: 0;
+       background-color: red;
+       text-align: left;
+       display: none;
+       
+}
+.dropdown-container:hover .dropdown-content {
+       display: block;
+       
+}
+.dropdown-content a:hover{
+       background-color: gray;
+} */
+
+
+
+
+/* class-48:transform */
+/* .div1{
+       width: 200px;
+       height:200px;
+       background-color: crimson;
+       margin: auto;
+       margin-top: 50%;
+    
+       
+       
+}
+.div1:hover{
+       transition: 3s;
+       transform: translate(150px, 100px);
+       border-radius: 50%;
+    
+} */
+
+
+/*********** class-50::transition ************* */
+/* .transiton{
+       width:300px;
+       height:300px;
+       background-color:aqua;
+       margin:0 auto;
+       margin-top:100px;
+       display: flex;
+       justify-content: center;
+       align-items: center; */
+       /* transition-property: width, height;
+       transition-duration:1s;
+       transition-timing-function: ease-out;
+       transition-delay: 1s; */
+      /* transition:all 2s ease-in  ; */
+      /* transition-property: all;
+      transition-duration: 2s;
+      transition-timing-function: ease-in;
+      transition-delay: .1s;
+
+}
+.transiton:hover{
+       width: 400px;
+       height: 400px;
+     transform: rotate(360deg);
+     background-color: crimson;
+     border-radius: 50%;
+
+     
+} */
+
+
+
+
+/**************** js class-48:onsubmit  ****************** */
+/* div{
+       margin-bottom: 20px;
+} */
