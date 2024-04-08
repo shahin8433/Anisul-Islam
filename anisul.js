@@ -1,18 +1,12 @@
-
-
-
 // var base=prompt("enter your base =");
 // var height=prompt("enter height base =");
 // var area= base * height;
 // document.write("area =" + area)
-  
 
 // class 12 make template converter
 // var fah=parseFloat(prompt("enter your fahrenheit"));
 // var cel= (fah-32) * (5/9);
 // document.write("celcius =" + cel)
-
-
 
 // class-14: if ,else if, else
 // var num1=parseInt(prompt("Enter first number:"));
@@ -25,10 +19,6 @@
 // }
 // else{
 //                     console.log("Equal Number")
-
-
-
-
 
 // class-16 logical operator
 // var mark=prompt("inter your mark");
@@ -45,7 +35,7 @@
 // {console.log("D+")}
 // else if(mark >=39 && mark<=40)
 // {console.log("F+")}
-// else 
+// else
 // {console.log("fail")}
 
 // class 18 for loop
@@ -57,7 +47,6 @@
 //                     document.write(x +"<br>")
 // }
 
-
 // class 20 while loop
 // var i =1;
 // while(i<=50){
@@ -65,13 +54,12 @@
 //                     console.log(""+i)
 // }
 
-
 // var i=1;
 // var sum=0;
 // while(i<=10){
 //                     i=i+1;
 //                     sum=sum+i;
-                    
+
 // }
 // console.log(sum)
 
@@ -81,13 +69,12 @@
 //                  if(i%3==0 && i%5==0) {
 //                     console.log(" "+i)
 //                     sum=sum+i;
-//                  }  
-                 
+//                  }
+
 //                     i=i+1;
-                    
+
 // }
 // console.log(sum);
-
 
 // class-21: do while loop
 // var i=1;
@@ -96,9 +83,6 @@
 //                     i++
 // }
 // while(i<=10)
-
-
-
 
 // class-23: ternary Operator
 // var num=Number(prompt("Enter your number"));
@@ -125,9 +109,6 @@
 // var num=Number(prompt("Enter your number"));
 // var result= num>0 ? "positive" : num<0 ? "negative" : "zero"
 // console.log(result)
-
-
-
 
 // class-24: function
 // function shahin(num1,num2){
@@ -165,7 +146,6 @@
 // }
 // newfunction(48,6);
 
-
 // class-27: loop an array
 // var num=[10,20,30,40,50,60]
 // var sum=0;
@@ -193,10 +173,6 @@
 // }
 // console.log("sum= "+sum)
 
-
-
-
-
 // class-28: arry library function
 // var shahin=["shahin","shamim","suntana","rajiya"]
 // adding elements using splice
@@ -206,7 +182,6 @@
 // removing element using splice
 // shahin.splice(1,2);
 // console.log(shahin)
-
 
 // class-31: create a object
 
@@ -223,10 +198,7 @@
 // // console.log(s1.age)
 // // console.log(s1[name])
 
-
-
-
-// class-35:object model
+///////////////////////// class-35:object model /////////////////////////////////
 // var myheading=document.getElementById("heading1");
 // myheading.innerHTML="change"
 
@@ -240,9 +212,57 @@
 // var myheading=document.querySelector(".div1 a");
 // myheading.innerHTML="text change"
 
+// ///////////////////////// js class-37: onclick event  //////////////////////
+// function mymassege1(){
+//                     alert("I am button 1")
+// }
+// function mymassege2(){
+//                     alert("I am button 2")
+// }
+// function mymassege1(){
+                 
+//                     var myVar= document.getElementById("paraid");
+//                     myVar.innerHTML="i am button 1"
+// }
+// function mymassege2(){
+                 
+//                     var myVar= document.getElementById("paraid");
+//                     myVar.innerHTML="i am button 2"
+// }
+// var myVar= document.querySelector("#image")
+// function mymassege1(){
+//                     myVar.src= "./image/passport.jpg"
+// }
+// var myVar= document.querySelector("#image")
+// function mymassege2(){
+//                     myVar.src= "./image/image2.png"
+// }
+
+////////////////  js class-38:Find, create , add .remove ////////////////////////
+// var heading3 = document.createElement("h1");
+// var text = document.createTextNode("this is heading3");
+// heading3.appendChild(text);
+
+// var mydiv = document.querySelector(".my-div");
+// mydiv.appendChild(heading3);
+// var heading2 = document.getElementsByTagName("h1")[1];
+// mydiv.removeChild(heading2);
+
+// var heading0 = document.createElement("h1");
+// var text0 = document.createTextNode("this is heading0");
+// heading0.appendChild(text0);
+// var heading1 = document.getElementsByTagName("h1")[0];
+// mydiv.insertBefore(heading0, heading1 );
 
 
-//  class-64:
+
+//////////////////////  js class-39: dom traversing and manipulating ///////////////////////////////
+// downwords-querySelector/ queryselectorall
+// const studentList = document.querySelector(".student-list");
+// const studentA = studentList.querySelector(".student-a");
+
+
+//////////////////////////  class-64: //////////////////////////////////
 // function add(x,y){
 //                     var sum=x+y;
 //                     console.log(sum)
@@ -251,7 +271,6 @@
 
 // var add = (x,y) =>{
 //         var sum=x+y;
-//         console.log(sum)            
+//         console.log(sum)
 // }
 // add(2,3)
-
