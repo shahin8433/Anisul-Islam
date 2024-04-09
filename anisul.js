@@ -260,7 +260,56 @@
 // downwords-querySelector/ queryselectorall
 // const studentList = document.querySelector(".student-list");
 // const studentA = studentList.querySelector(".student-a");
+/////////////////  js class-42:Event listener- //////////////////////////////////
+// var myVar = document.querySelector("button")
+// myVar.addEventListener("click", myfun);
+// function myfun(){
+//                     alert("hellow")
+// }
+// var myVar = document.querySelector("h1");
+// myVar.addEventListener("mouseover", function(){
+//                     myVar.classList.add("my-style")
+// });
+// myVar.addEventListener("mouseout", function(){
+//                     myVar.classList.remove("my-style")
+// });
 
+///////////////////////// js class-43:event listeners //////////////////////////
+// var myVar = document.querySelectorAll(".mybutton")[0];
+// myVar.addEventListener("click", function(){
+//                     var text = this.innerHTML;
+//                     document.querySelector(".heading1").innerHTML = text + "is clicked"
+// });
+// var myVar = document.querySelectorAll(".mybutton")[1];
+// myVar.addEventListener("click", function(){
+//                     var text = this.innerHTML;
+//                     document.querySelector(".heading1").innerHTML = text + "is clicked"
+// });
+// var myVar = document.querySelectorAll(".mybutton")[2];
+// myVar.addEventListener("click", function(){
+//                     var text = this.innerHTML;
+//                     document.querySelector(".heading1").innerHTML = text + "is clicked"
+// });
+for (var i=0; i<3; i++){
+                    var myVar = document.querySelectorAll(".mybutton")[i];
+myVar.addEventListener("click", function(){
+                    var text = this.innerHTML;
+                    document.querySelector(".heading1").innerHTML = text + "is clicked"
+});
+}
+
+//////////////////////////  js class-44:play audio /////////////////////////////
+// for (var i=0; i<3; i++){
+//                     var myVar = document.querySelectorAll(".mybutton")[i];
+// myVar.addEventListener("click", function(){
+//                   var text=this.innerHTML;
+//                   console.log(text);  
+//                   switch(text){
+//                     case "a":
+//                     var audio = new audio
+//                   }
+// });
+// }
 
 //////////////////////////  class-64: //////////////////////////////////
 // function add(x,y){

@@ -475,6 +475,19 @@ div:hover{
 
 
 
+/**************** js class-42:Event listener-  ****************** */
+/* .my-style{
+       font-size: 3rem;
+       color: tomato;
+} */
+
+/**************** js class-44:play audio  ****************** */
+.mybutton{
+       background-color: green;
+       border: none;
+       font-size: 3rem;
+       padding: 5px 40px;
+}
 /**************** js class-48:onsubmit  ****************** */
 /* div{
        margin-bottom: 20px;
