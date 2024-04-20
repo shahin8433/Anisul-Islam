@@ -3,22 +3,22 @@
 // var area= base * height;
 // document.write("area =" + area)
 
-// class 12 make template converter
+//////////////////////// class 12 make template converter //////////////////
 // var fah=parseFloat(prompt("enter your fahrenheit"));
 // var cel= (fah-32) * (5/9);
 // document.write("celcius =" + cel)
 
-// class-14: if ,else if, else
+//////////////////////// class-14: if ,else if, else /////////////////////////
 // var num1=parseInt(prompt("Enter first number:"));
 // var num2=parseInt(prompt("Enter second number:"));
 // if(num1>num2){
-//                     console.log("Large Number is= "+num1);
+//                     document.write("Large Number is = "+num1);
 // }
 // else if(num2>num1){
-//                     console.log("Large Number is= "+ num2)
+//                     document.write("Large Number is = "+ num2)
 // }
 // else{
-//                     console.log("Equal Number")
+//                     document.write("Equal Number")}
 
 // class-16 logical operator
 // var mark=prompt("inter your mark");
@@ -220,12 +220,12 @@
 //                     alert("I am button 2")
 // }
 // function mymassege1(){
-                 
+
 //                     var myVar= document.getElementById("paraid");
 //                     myVar.innerHTML="i am button 1"
 // }
 // function mymassege2(){
-                 
+
 //                     var myVar= document.getElementById("paraid");
 //                     myVar.innerHTML="i am button 2"
 // }
@@ -254,12 +254,20 @@
 // var heading1 = document.getElementsByTagName("h1")[0];
 // mydiv.insertBefore(heading0, heading1 );
 
-
-
 //////////////////////  js class-39: dom traversing and manipulating ///////////////////////////////
 // downwords-querySelector/ queryselectorall
 // const studentList = document.querySelector(".student-list");
 // const studentA = studentList.querySelector(".student-a");
+
+/////////////////  js class-41: changing css style //////////////////////////////
+// var myVar = document.querySelector("#paraId")
+// function addStyle(){
+//                     myVar.classList.add("para-style");
+// }
+// function removeStyle(){
+//                     myVar.classList.remove("para-style");
+// }
+
 /////////////////  js class-42:Event listener- //////////////////////////////////
 // var myVar = document.querySelector("button")
 // myVar.addEventListener("click", myfun);
@@ -273,6 +281,11 @@
 // myVar.addEventListener("mouseout", function(){
 //                     myVar.classList.remove("my-style")
 // });
+
+
+
+
+
 
 ///////////////////////// js class-43:event listeners //////////////////////////
 // var myVar = document.querySelectorAll(".mybutton")[0];
@@ -290,26 +303,61 @@
 //                     var text = this.innerHTML;
 //                     document.querySelector(".heading1").innerHTML = text + "is clicked"
 // });
-for (var i=0; i<3; i++){
-                    var myVar = document.querySelectorAll(".mybutton")[i];
-myVar.addEventListener("click", function(){
-                    var text = this.innerHTML;
-                    document.querySelector(".heading1").innerHTML = text + "is clicked"
-});
-}
+// for (var i=0; i<3; i++){
+//                     var myVar = document.querySelectorAll(".mybutton")[i];
+// myVar.addEventListener("click", function(){
+//                     var text = this.innerHTML;
+//                     document.querySelector(".heading1").innerHTML = text + "is clicked"
+// });
+// }
+
 
 //////////////////////////  js class-44:play audio /////////////////////////////
 // for (var i=0; i<3; i++){
 //                     var myVar = document.querySelectorAll(".mybutton")[i];
 // myVar.addEventListener("click", function(){
 //                   var text=this.innerHTML;
-//                   console.log(text);  
-//                   switch(text){
-//                     case "a":
-//                     var audio = new audio
-//                   }
+//                   console.log(text);
+//                   audioPlay(text);
+//                   playAinim(text);
+              
 // });
+// };
+// document.addEventListener("keypress", function(event){
+//                     var text = event.key;
+//                     audioPlay(text);
+//                     playAinim(text);
+// })
+
+// function audioPlay(text){
+//                     switch(text){
+//                                         case"a":
+//                                         var audio = new Audio("./audio/audio1.mp3");
+//                                         audio.play();
+//                                         break;
+//                                         case"b":
+//                                         var audio = new Audio("./audio/audio2.mp3");
+//                                         audio.play();
+//                                         break;
+//                                         case"c":
+//                                         var audio = new Audio("./audio/audio3.mp3");
+//                                         audio.play();
+//                                         break;
+//                     }
 // }
+// function playAinim(text){
+//                     var selectButton = document.querySelector("." + text);
+//                     selectButton.classList.add("anim");
+//                     setTimeout(function(){
+//                                         selectButton.classList.remove("anim");
+//                     }, 1000);
+// }
+
+//  document.addEventListener("keypress", function(event){
+//                     var text = event.key;
+//                     var myVar = document.querySelector("p");
+//                     myVar.innerHTML = " you have press key " + text;
+//  })
 
 //////////////////////////  class-64: //////////////////////////////////
 // function add(x,y){
@@ -323,3 +371,49 @@ myVar.addEventListener("click", function(){
 //         console.log(sum)
 // }
 // add(2,3)
+///////////  class-66: default and rest parameter ///////////////////////////
+// default paremeter
+// function message(text="hello everyone"){
+//                     console.log(text);
+// }
+// message();
+// message("i love bangladesh");
+// rest parameter
+// function printNumber(x,y,...z){
+//                    console.log(`x= ${x}, y= ${y}, z= ${z}`)
+// }
+// printNumber(1,2,3,4,5);
+
+///////////  class-67: default and rest parameter ///////////////////////////
+// function sum(x,y,z){
+//                     return x+y+z;
+// }
+// let numbers = [1,2,3];
+// console.log(sum(...numbers));
+
+// let allNumbers1 = [4,5, ...numbers];
+// console.log(allNumbers1);
+
+// let allNumbers2 = [4,...numbers,5];
+// console.log(allNumbers2);
+
+// let allNumbers3 = [...numbers,4,5];
+// console.log(allNumbers3);
+
+// let oddNumbers = [1,3,5];
+// let evenNumbers = [2,4,6];
+// let totalNumbers = [...oddNumbers,...evenNumbers];
+// console.log(totalNumbers);
+
+// let copyArray = [...totalNumbers];
+// console.log(`copyArray = ${copyArray}`);
+
+// let chars = [`A`, `b`, ...`Anisul`, `z`];
+// console.log(chars)
+
+// let personalinfo1 = {name: `shahin alam`, age: 18};
+// let personalinfo2 = {id: `101`, nationality: "bd"};
+// let p1= {...personalinfo1};
+// console.log(p1)
+// let p2= {...personalinfo1, ...personalinfo2};
+// console.log(p2);
