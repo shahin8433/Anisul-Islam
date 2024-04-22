@@ -1,13 +1,15 @@
 // var base=prompt("enter your base =");
 // var height=prompt("enter height base =");
 // var area= base * height;
-// document.write("area =" + area)
+// document.write("area =" + area);
 
+//////////////////////////////////////////////////////////////////////////////
 //////////////////////// class 12 make template converter //////////////////
 // var fah=parseFloat(prompt("enter your fahrenheit"));
 // var cel= (fah-32) * (5/9);
 // document.write("celcius =" + cel)
 
+//////////////////////////////////////////////////////////////////////////////
 //////////////////////// class-14: if ,else if, else /////////////////////////
 // var num1=parseInt(prompt("Enter first number:"));
 // var num2=parseInt(prompt("Enter second number:"));
@@ -18,11 +20,12 @@
 //                     document.write("Large Number is = "+ num2)
 // }
 // else{
-//                     document.write("Equal Number")}
+//                     document.write("Equal Number")};
 
-// class-16 logical operator
+//////////////////////////////////////////////////////////////////////////////
+////////////// class-16 logical operator /////////////////////////////
 // var mark=prompt("inter your mark");
-// if(mark >= || mark >=0)
+// if(mark >= 100 || mark < 0)
 // {console.log("invalid mark")}
 
 // if(mark >=79 && mark<=100)
@@ -38,8 +41,32 @@
 // else
 // {console.log("fail")}
 
-// class 18 for loop
+// Large Number
+// var num1 = prompt("Enter num1");
+// var num2 = prompt("Enter nu2");
+// var num3 = prompt("Enter num4");
+// if(num1>num2 && num1>num3 ){
+//                     document.write("Large number = "+ num1);
+// }
+// else if(num2>num1 && num2>num3){
+//                     document.write("Large number = "+ num2);
+// }
+// else{
+//                     document.write("Large number = "+ num3)
+// }
 
+// Vowel/consonant
+// var letter = prompt("Enter your letter");
+// letter = letter.toLowerCase();
+// if (letter=="a" || letter=="e" || letter=="i" || letter=="o" || letter=="u"){
+//                     document.write("Letter is vowel")
+// }
+// else{
+//                     document.write("letter is consonant")
+// }
+
+//////////////////////////////////////////////////////////////////////////////
+///////////////// class 18 for loop //////////////////////////////////////
 // for(var x=1; x<=10; x=x+1){
 //                     document.write("<h1>Bangladesh</h1>")
 // }
@@ -47,7 +74,8 @@
 //                     document.write(x +"<br>")
 // }
 
-// class 20 while loop
+//////////////////////////////////////////////////////////////////////////////
+////////////////////// class 20 while loop //////////////////////////////////////
 // var i =1;
 // while(i<=50){
 //                     i=i+1;
@@ -76,7 +104,8 @@
 // }
 // console.log(sum);
 
-// class-21: do while loop
+//////////////////////////////////////////////////////////////////////////////
+///////////////////// class-21: do while loop /////////////////////////////////
 // var i=1;
 // do{
 //                     console.log(i);
@@ -84,7 +113,8 @@
 // }
 // while(i<=10)
 
-// class-23: ternary Operator
+//////////////////////////////////////////////////////////////////////////////
+//////////////// class-23: ternary Operator ////////////////////////////////
 // var num=Number(prompt("Enter your number"));
 // if(num>0){
 //                     console.log("positive")
@@ -110,7 +140,8 @@
 // var result= num>0 ? "positive" : num<0 ? "negative" : "zero"
 // console.log(result)
 
-// class-24: function
+//////////////////////////////////////////////////////////////////////////////
+// ///////////////// class-24: function ///////////////////////////////////
 // function shahin(num1,num2){
 //                     var result=num1+num2;
 //                     console.log(result)
@@ -135,7 +166,8 @@
 // addition(2,3);
 // subtraction(10,6)
 
-// class-25: IIFEs and function expression;
+//////////////////////////////////////////////////////////////////////////////
+/////////////// class-25: IIFEs and function expression; ///////////////////
 // (function shahin(num1,num2){
 //                     var result=num1+num2;
 //                     console.log(result)
@@ -146,7 +178,22 @@
 // }
 // newfunction(48,6);
 
-// class-27: loop an array
+/////////////////////////////////////////////////////////////////////
+///////////////// class-26: create and use array ////////////////////////
+// var fdName= ["mirad","roman","sohag"];
+// console.log(fdName.length);
+// console.log(fdName[2]);
+// fdName.push("shahin");
+// fdName.pop()
+// console.log(fdName);
+
+// var country1=["bangladesh"];
+// var country2=["india"];
+// var country= country1.concat(country2);
+// console.log(country)
+
+/////////////////////////////////////////////////////////////////////
+///////////////// class-27: loop an array //////////////////////////
 // var num=[10,20,30,40,50,60]
 // var sum=0;
 // for(var i=0; i<=5; i++){
@@ -173,7 +220,8 @@
 // }
 // console.log("sum= "+sum)
 
-// class-28: arry library function
+//////////////////////////////////////////////////////////////////////////////
+//////////////////// class-28: arry library function ///////////////////////
 // var shahin=["shahin","shamim","suntana","rajiya"]
 // adding elements using splice
 // shahin.splice(2,1,"roman","badhon")
@@ -183,8 +231,8 @@
 // shahin.splice(1,2);
 // console.log(shahin)
 
-// class-31: create a object
-
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////// class-31: create a object ///////////////
 // function student(name,age,cgpa,lang){
 //                     this.name=name;
 //                     this.age=age;
@@ -195,9 +243,10 @@
 // var s2=new student("shahin",18, 3.21,"bangla english,hindi");
 // var s3=new student("shamim",17,2.11,"bangla")
 // console.log(s1)
-// // console.log(s1.age)
-// // console.log(s1[name])
+// console.log(s1.age)
+// console.log(s1["name"])
 
+////////////////////////////////////////////////////////////////////////////////
 ///////////////////////// class-35:object model /////////////////////////////////
 // var myheading=document.getElementById("heading1");
 // myheading.innerHTML="change"
@@ -211,7 +260,7 @@
 
 // var myheading=document.querySelector(".div1 a");
 // myheading.innerHTML="text change"
-
+//////////////////////////////////////////////////////////////////////////////
 // ///////////////////////// js class-37: onclick event  //////////////////////
 // function mymassege1(){
 //                     alert("I am button 1")
@@ -237,7 +286,7 @@
 // function mymassege2(){
 //                     myVar.src= "./image/image2.png"
 // }
-
+//////////////////////////////////////////////////////////////////////////////
 ////////////////  js class-38:Find, create , add .remove ////////////////////////
 // var heading3 = document.createElement("h1");
 // var text = document.createTextNode("this is heading3");
@@ -254,11 +303,13 @@
 // var heading1 = document.getElementsByTagName("h1")[0];
 // mydiv.insertBefore(heading0, heading1 );
 
-//////////////////////  js class-39: dom traversing and manipulating ///////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+///////////////  js class-39: dom traversing and manipulating //////////////////
 // downwords-querySelector/ queryselectorall
 // const studentList = document.querySelector(".student-list");
 // const studentA = studentList.querySelector(".student-a");
 
+//////////////////////////////////////////////////////////////////////////////
 /////////////////  js class-41: changing css style //////////////////////////////
 // var myVar = document.querySelector("#paraId")
 // function addStyle(){
@@ -268,6 +319,7 @@
 //                     myVar.classList.remove("para-style");
 // }
 
+//////////////////////////////////////////////////////////////////////////////
 /////////////////  js class-42:Event listener- //////////////////////////////////
 // var myVar = document.querySelector("button")
 // myVar.addEventListener("click", myfun);
@@ -282,11 +334,7 @@
 //                     myVar.classList.remove("my-style")
 // });
 
-
-
-
-
-
+//////////////////////////////////////////////////////////////////////////////
 ///////////////////////// js class-43:event listeners //////////////////////////
 // var myVar = document.querySelectorAll(".mybutton")[0];
 // myVar.addEventListener("click", function(){
@@ -311,7 +359,7 @@
 // });
 // }
 
-
+//////////////////////////////////////////////////////////////////////////////
 //////////////////////////  js class-44:play audio /////////////////////////////
 // for (var i=0; i<3; i++){
 //                     var myVar = document.querySelectorAll(".mybutton")[i];
@@ -320,7 +368,7 @@
 //                   console.log(text);
 //                   audioPlay(text);
 //                   playAinim(text);
-              
+
 // });
 // };
 // document.addEventListener("keypress", function(event){
@@ -359,6 +407,7 @@
 //                     myVar.innerHTML = " you have press key " + text;
 //  })
 
+//////////////////////////////////////////////////////////////////////////////
 //////////////////////////  class-64: //////////////////////////////////
 // function add(x,y){
 //                     var sum=x+y;
@@ -371,6 +420,8 @@
 //         console.log(sum)
 // }
 // add(2,3)
+
+//////////////////////////////////////////////////////////////////////////////
 ///////////  class-66: default and rest parameter ///////////////////////////
 // default paremeter
 // function message(text="hello everyone"){
@@ -384,6 +435,7 @@
 // }
 // printNumber(1,2,3,4,5);
 
+//////////////////////////////////////////////////////////////////////////////
 ///////////  class-67: default and rest parameter ///////////////////////////
 // function sum(x,y,z){
 //                     return x+y+z;
@@ -417,3 +469,129 @@
 // console.log(p1)
 // let p2= {...personalinfo1, ...personalinfo2};
 // console.log(p2);
+
+//////////////////////////////////////////////////////////////////////////////
+///////////////////  js class-68: object literals /////////////////////////////
+// function student1(name, age){
+//                     return{
+//                                         name:name,
+//                                         age: age
+//                     }
+// }
+// console.log(student1("shahin", 18));
+
+// function student2(name, age){
+//                     return{
+//                                         name,
+//                                         age
+//                     }
+// }
+// console.log(student2("mirad", 20));
+// let message1 = {
+//                     body : function(){
+//                                         return(`I love bangladesh`)
+//                     }
+// }
+// console.log(message1.body());
+// let message2 = {
+//                     body(){
+//                                         return(`I love bangladesh`)
+//                     }
+// }
+// console.log(message2.body())
+// let message3 = {
+//                     'body name' (){
+//                                         return(`I love bangladesh`);
+//                     }
+// }
+// console.log(message3['body name']())
+//////////////////////////////////////////////////////////////////////////////
+////////////////////  js class-69: for of, for in loop ///////////////////////
+// const student1 = ["s1", "s2","s3","s4"];
+// for(let name of student1){
+//                     console.log(name);
+// }
+// const student2 = {
+//                     name: "shahin",
+//                     age: 18,
+//                     id : 26
+// }
+// for (let x in student2){
+//                     console.log(x);
+//                     console.log(student2[x]);
+// }
+// let student = {
+//                     id: 101,
+//                     name: "shahin",
+//                     age: 18
+// }
+// for(let x in student){
+//                     console.log(`${x} : ${student[x]}`)
+// }
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-70: forEach vs for ///////////////////////////
+// var numbers =[5,7,8,9];
+// for(var x=0; x<numbers.length; x++){
+//                     console.log(numbers[x])
+// }
+// var numbers =[5,7,8,9];
+// numbers.forEach(function(x){
+//                     console.log(x)
+// })
+
+// var numbers =[5,7,8,9];
+// var squreNumbers = [];
+// numbers.forEach(function(x){
+//                     squreNumbers.push(x*x);
+// })
+// console.log(squreNumbers)
+// var numbers =[5,7,8,9];
+// console.log(numbers);
+// numbers.forEach(function(x,index,arr){
+//                     arr[index] = x+5;
+// })
+// console.log(numbers);
+
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-71: map and filter array ///////////////////////////
+// var numbers=[2,4,5,6,10];
+// var squarenumbers=[];
+// numbers.forEach(function(x){
+//                     squarenumbers.push(x*x);
+// })
+// console.log(squarenumbers)
+
+// var squarenumbers= numbers.map(function(x){
+//                     return x*x;
+// })
+// console.log(squarenumbers);
+
+// var newArray= numbers.filter(function(x){
+//                     return x>5;
+// })
+// console.log(newArray)
+
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-72: Arrow fucntion ///////////////////////////
+// function display1(){
+//                     console.log("i am display 1") //tradition funtion
+// }
+// display1();
+
+// const display2= () =>{
+//                     console.log("i am display 2") // arrow function 
+// }
+// display2()
+
+// function message1(){
+//                     return "i am message 1"
+// }
+// console.log(message1())
+// const message2= ()=> "i am message 2"
+// console.log(message2())
+
+
+
