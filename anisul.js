@@ -408,6 +408,34 @@
 //  })
 
 //////////////////////////////////////////////////////////////////////////////
+///////////  class-47: event object onchange event ///////////////////////////
+// const input = document.querySelector("input[name=name]");
+// input.addEventListener ("change", changeHandler);
+// function changeHandler(e){
+//                     // console.log("changed")
+//                     // console.log(e);
+//                     // console.log(e.type);
+//                     // console.log(e.target);
+//                     // console.log(e.target.className);
+//                     // console.log(e.target.id);
+//                     console.log(e.target.value);
+// }
+
+// const input = document.querySelector("input[name=name]");
+// input.addEventListener("change", changeHandler);
+
+// function changeHandler(e) {
+//                     console.log("changed")
+//   //   console.log(e);
+//   //   console.log(e.type);
+//   //   console.log(e.target);
+//   //   console.log(e.target.className);
+//   //   console.log(e.target.id);
+// //   console.log(e.target.value);
+// }
+
+
+//////////////////////////////////////////////////////////////////////////////
 //////////////////////////  class-64: //////////////////////////////////
 // function add(x,y){
 //                     var sum=x+y;
@@ -575,7 +603,7 @@
 
 
 //////////////////////////////////////////////////////////////////////////////
-///////////  class-72: Arrow fucntion ///////////////////////////
+///////////  class-72: Arrow fucntion part-1 ///////////////////////////
 // function display1(){
 //                     console.log("i am display 1") //tradition funtion
 // }
@@ -593,5 +621,80 @@
 // const message2= ()=> "i am message 2"
 // console.log(message2())
 
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-73: arrow function part-2 ///////////////////////////
+// var students = [   {
+//                     id: 101,
+//                     name: "anisul islam",
+//                     gpa: 2.32
+// },
+// {
+//                     id: 102,
+//                     name: "rifat islam",
+//                     gpa: 4.32
+// },
+// {
+//                     id: 103,
+//                     name: "mirad islam",
+//                     gpa: 3.32
+// },
+// {
+//                     id: 101,
+//                     name: "rony",
+//                     gpa: 5.00
+// }
+// ];
+// function studentNames1(){
+//                     return students.filter(function(x){
+//                                         return x.gpa >4;
+//                     }).map(function(y){
+//                                         return y.name; 
+//                     })
+// }
+//     console.log(studentNames1())     // traditional function
+    
+// const studentNames2 = ()=> students.filter((x)=> x.gpa>4).map((y)=>y.name);
+// console.log(studentNames2());
+
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-74: destructuring array and ohjects //////////////////////
+// array destructure
+// let numbers = [5,6,7,9]
+// let [num1,num2,num3,num4] = numbers;
+// console.log(num1);
+// console.log(num4);
+
+// swap variables
+// let a=5, b=7;
+// [a,b] = [b,a]
+// console.log(a);
+// console.log(b);
+
+// object destructure
+// const studentinfo = {
+//                     id: 101,
+//                     fullName: 'anisul islam',
+//                     lang: {
+//                                         native: 'bangla',
+//                                         beginer: 'english'
+//                     }
+// }
+
+// const {id, fullName,lang}= studentinfo
+// console.log(id);
+// console.log(fullName);
+// console.log(lang.native)
+
+// function parameters destructure
+// const studentinfo = ({id, fullName})=>{
+//                     console.log(`${id}, ${fullName}`)
+// }
+// const student = {
+//                     id: 101,
+//                     fullName: 'anisul islam'
+// }
+// studentinfo(student)
 
 
