@@ -421,19 +421,28 @@
 //                     console.log(e.target.value);
 // }
 
-// const input = document.querySelector("input[name=name]");
-// input.addEventListener("change", changeHandler);
-
-// function changeHandler(e) {
-//                     console.log("changed")
-//   //   console.log(e);
-//   //   console.log(e.type);
-//   //   console.log(e.target);
-//   //   console.log(e.target.className);
-//   //   console.log(e.target.id);
-// //   console.log(e.target.value);
+// const programs = document.querySelectorAll("input[name=program");
+// // console.log(programs)
+// Array.from(programs).map((program)=> {
+//                  program.addEventListener("change", programHandler)
+// })
+// function programHandler(e){
+//                   if(e.target.checked){
+//                     console.log(e.target.value);
+//                   }
 // }
 
+// const department = document.querySelector("#department");
+// // console.log(department)
+// department.addEventListener("change", handlerDepartment)
+// function handlerDepartment(e){
+//                     console.log(e.target.value)
+// }
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////  class-48: onsubmit event ///////////////////////////
+// const form = document.querySelector("form")
+// const name =document.querySelector("div #name")
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////  class-64: //////////////////////////////////
@@ -448,6 +457,32 @@
 //         console.log(sum)
 // }
 // add(2,3)
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-52:keyboardEvent ///////////////////////////
+// const textarea= document.querySelector("textarea");
+// textarea.addEventListener("keydown",function(e){
+//   // console.log("keydown");
+//   if(e.repeat){
+//     alert("do not repeat")
+//   }
+// })
+// textarea.addEventListener("keypress",function(){
+//   console.log("keypress");
+// })
+// textarea.addEventListener("keyup",function(e){
+//   // console.log("keyup");
+//   // console.log(e.key);
+//   // console.log(e.keyCode);
+//   // console.log(e.code);
+//   // console.log(e.shiftKey);
+//   if(e.shiftKey){
+//     console.log(`shift+ ${e.key}`);
+//   }
+// })
+
+
+
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////  class-66: default and rest parameter ///////////////////////////
@@ -581,7 +616,6 @@
 // })
 // console.log(numbers);
 
-
 //////////////////////////////////////////////////////////////////////////////
 ///////////  class-71: map and filter array ///////////////////////////
 // var numbers=[2,4,5,6,10];
@@ -601,7 +635,6 @@
 // })
 // console.log(newArray)
 
-
 //////////////////////////////////////////////////////////////////////////////
 ///////////  class-72: Arrow fucntion part-1 ///////////////////////////
 // function display1(){
@@ -610,7 +643,7 @@
 // display1();
 
 // const display2= () =>{
-//                     console.log("i am display 2") // arrow function 
+//                     console.log("i am display 2") // arrow function
 // }
 // display2()
 
@@ -620,7 +653,6 @@
 // console.log(message1())
 // const message2= ()=> "i am message 2"
 // console.log(message2())
-
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////  class-73: arrow function part-2 ///////////////////////////
@@ -649,14 +681,13 @@
 //                     return students.filter(function(x){
 //                                         return x.gpa >4;
 //                     }).map(function(y){
-//                                         return y.name; 
+//                                         return y.name;
 //                     })
 // }
 //     console.log(studentNames1())     // traditional function
-    
+
 // const studentNames2 = ()=> students.filter((x)=> x.gpa>4).map((y)=>y.name);
 // console.log(studentNames2());
-
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////  class-74: destructuring array and ohjects //////////////////////
@@ -697,4 +728,244 @@
 // }
 // studentinfo(student)
 
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-75: array find , findIndex method //////////////////////
 
+// let numbers= [5, 15, 14, 26];
+// // const evenNumbers = (value)=> {
+// //                     if(value%2===0)
+// //                     return value;
+// // }
+// // let firstEvenNumbers = numbers.find(evenNumbers);
+// let firstEvenNumbers = numbers.find((x)=> x%2===0);
+// console.log(firstEvenNumbers);
+// let firstEvenNumbersIndex = numbers.findIndex((x)=> x%2===0);
+// console.log(firstEvenNumbersIndex);
+
+// const students = [
+//                     {
+//                                         id: 101,
+//                                         gpa: 2.31
+//                     },
+//                     {
+//                                         id: 101,
+//                                         gpa: 3.31
+//                     },
+//                     {
+//                                         id: 101,
+//                                         gpa: 4.31
+//                     },
+//                     {
+//                                         id: 101,
+//                                         gpa: 5.00
+//                     },
+// ]
+// console.log(students.find((x)=> x.gpa>4));
+
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-78: Synchronous vs Asynchronous //////////////////////
+// const taskOne=()=>{
+//                     console.log("taskOne");
+// }
+// function dataLoding(){
+//                     console.log("taskTwo dataloding");
+// }
+// const taskTwo=()=>{
+//                setTimeout(dataLoding, 3000)
+// }
+// const taskThree=()=>{
+//                     console.log("taskThree");
+// }
+// const taskFour=()=>{
+//                     console.log("taskFour");
+// }
+// const taskFive=()=>{
+//                     console.log("taskOne");
+// }
+
+// taskOne()
+// taskTwo()
+// taskThree()
+// taskFour()
+// taskFive()
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-79: callback and higher order function ///////////////////
+// function square(x){
+//                     console.log(`square of ${x}: ${x*x}`);
+// }
+
+// function higherOrderFunction (num, callback){
+//                     callback(num)
+// }
+// higherOrderFunction(5, square)
+
+// const taskOne = (callback) => {
+//   console.log("taskOne");
+//   callback();
+// };
+
+// const taskTwo = (callback) => {
+//   setTimeout(() => {
+//     console.log("taskTwo dataloading");
+//     callback();
+//   }, 3000);
+// };
+// const taskThree = (callback) => {
+//   console.log("taskThree");
+//   callback();
+// };
+// const taskFour = (callback) => {
+//   console.log("taskFour");
+//   callback();
+// };
+// const taskFive = () => {
+//   console.log("taskFive");
+ 
+// };
+
+// taskOne(() => {
+//   taskTwo(() => {
+//     taskThree(()=>{
+//                     taskFour(()=>{
+//                                         taskFive()
+//                     })
+//     });
+//   });
+// });
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-80: promise part-1 ////////////////////////////////////////
+// console.log("wellcome");
+// const promise1 = new Promise((resolve, reject)=>{
+//   let completedPromise = true;
+//   // let completedPromise = false;
+//   if(completedPromise){
+//     resolve("complete promised 1");
+//   }
+//   else{
+//     reject("not completed promise 1")
+//   }
+// })
+// // promise1.then((res1)=>{
+// //   console.log(res1);
+// // })
+// // .catch((err)=>{
+// //   console.log(err);
+// // })
+// const promise2 = new Promise((resolve, reject)=>{
+//   resolve("completed promise 2")
+// })
+// // promise2.then((res2)=>{
+// //   console.log(res2);
+// // })
+// Promise.all([promise1, promise2]).then(([res1,res2])=>{
+//   console.log(res1,res2);
+// })
+
+// const promise1 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     resolve("completed promise 1")
+//   }, 2000)
+// })
+// const promise2= new Promise((resolve, reject)=>{
+//   resolve("completed promise 2")
+// },1000)
+// Promise.race([promise1, promise2]).then((res)=>{
+//   console.log(res);
+// })
+// console.log("end");
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-81: promise part-2 ////////////////////////////////////////
+// console.log("wellcome");
+// const taskOne=()=>{
+//   return new Promise((resolve, reject)=>{
+//     resolve("task 1 is completed")
+//   })
+// }
+// const taskTwo=()=>{
+//   return new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       resolve("task 2 is completed")
+//     },2000)
+//   })
+// }
+// const taskThree=()=>{
+//   return new Promise((resolve, reject)=>{
+//     // resolve("task 3 is completed")
+//     reject("task 3 is not completed")
+//   })
+// }
+// const taskFour=()=>{
+//   return new Promise((resolve, reject)=>{
+//     resolve("task 4 is completed")
+//   })
+// }
+// taskOne()
+// .then((res)=>console.log(res))
+// .then(taskTwo)
+// .then((res)=>console.log(res))
+// .then(taskThree)
+// .then((res)=>console.log(res))
+// .then(taskFour)
+// .then((res)=>console.log(res))
+// .catch((res)=>console.log(res))
+
+// console.log("end");
+
+//////////////////////////////////////////////////////////////////////////////
+///////////  class-82: async await ////////////////////////////////////////
+// console.log("wellcome");
+// const taskOne=()=>{
+//   return new Promise((resolve, reject)=>{
+//     resolve("task 1 is completed")
+//   })
+// }
+// const taskTwo=()=>{
+//   return new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       resolve("task 2 is completed")
+//     },2000)
+//   })
+// }
+// const taskThree=()=>{
+//   return new Promise((resolve, reject)=>{
+//     // resolve("task 3 is completed")
+//     reject("task 3 is not completed")
+//   })
+// }
+// const taskFour=()=>{
+//   return new Promise((resolve, reject)=>{
+//     resolve("task 4 is completed")
+//   })
+// }
+// // async function callAllTask(){
+// //   const t1= await taskOne();
+// //   console.log(t1);
+// //   const t2 = await taskTwo();
+// //   console.log(t2);
+// //   const t3 = await taskThree();
+// //   console.log(t3);
+// //   const t4 = await taskFour();
+// //   console.log(t4);
+// // }
+// async function callAllTask(){
+// try{
+//   const t1= await taskOne();
+//   console.log(t1);
+//   const t2 = await taskTwo();
+//   console.log(t2);
+//   const t3 = await taskThree();
+//   console.log(t3);
+//   const t4 = await taskFour();
+//   console.log(t4);
+// }
+// catch (e){
+//   console.log(e);
+// }
+// }
+// callAllTask()
+
+// console.log("end");
